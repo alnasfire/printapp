@@ -129,7 +129,11 @@ public class Step1 extends JPanel{
         newBtn.setIcon(ImageResource.getImageIcon("New32.png"));
         newBtn.setContentAreaFilled(false);
         newBtn.setHorizontalAlignment(AbstractButton.LEFT);
-
+        newBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Utils.forwardState(Utils.getMainPanel());
+            }
+        });
         openBtn = Utils.getButton("Open");
         openBtn.setIcon(ImageResource.getImageIcon("Open32.png"));
         openBtn.setContentAreaFilled(false);

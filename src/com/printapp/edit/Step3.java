@@ -44,7 +44,7 @@ public class Step3 extends JPanel{
         jt.setEditable(false);
         tmpArea.add(jt, BorderLayout.CENTER);
         tmpArea.add(acceptBtn, BorderLayout.SOUTH);
-        tmpArea.setBorder(new LineBorder(ColorScheme.panelBorderColor));
+        //tmpArea.setBorder(new LineBorder(ColorScheme.panelBorderColor));
         topArea = new JPanel();
         topArea.setLayout(new GridLayout(1, 4));
         topArea.add(addImageBtn);

@@ -5,6 +5,8 @@ import java.util.Properties;
 
 public class Configuration {
 
+    private static final String version="0.001";
+    
     private static Properties props = null;
     public static final String default_language = "ru";
 
@@ -36,5 +38,9 @@ public class Configuration {
 
     public static void setLanguage(String lang){
         setProperty("language", lang);
+    }
+    
+    public static String getVersion(){
+        return version;
     }
 }

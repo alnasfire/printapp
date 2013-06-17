@@ -15,7 +15,7 @@ public class Utils {
     }
 
     public static void constrain(Container c, Component p, int x, int y, int width, int height, int fill, int anchor, double weightx, double weighty, int insetTop, int insetLeft, int insetRight, int insetBottom){
-        GridBagConstraints gc = new GridBagConstraints(x, y, width, height, weightx, weighty, anchor, fill, new Insets(insetTop, insetLeft, insetRight, insetBottom), 0, 0);
+        GridBagConstraints gc = new GridBagConstraints(x, y, width, height, weightx, weighty, anchor, fill, new Insets(insetTop, insetLeft, insetBottom, insetRight), 0, 0);
         c.add(p, gc);
     }
 
@@ -88,5 +88,13 @@ public class Utils {
                 return i18n.getString(key);
             }
         };
+    }
+    
+    public static void buttonEntered(JButton btn){
+        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+    }
+
+    public static void buttonExited(JButton btn){
+        btn.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 }

@@ -5,21 +5,18 @@ import com.printapp.edit.Step2;
 import com.printapp.edit.Step3;
 import com.printapp.util.*;
 import javax.swing.*;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
+import java.awt.event.*;
 
 public class MainFrame extends JFrame implements MainPanel {
 
-    protected JMenuBar menuBar;
-    protected JMenu menu;
-    protected JTabbedPane tabbedPane;
     protected JPanel bottomPanel;
-    protected JPanel bannerPanel;
-    protected JButton i18nSwitchBtn;
-    Image bannerImg;
-    private static String[] langList = {"ru", "en"};
+    protected JButton exitBtn;
+    protected JLabel versionLabel;
     private String state = ""+States.Step1;
-
     private JPanel mainPanel;
 
     public JPanel getMainPanel(){
@@ -36,60 +33,48 @@ public class MainFrame extends JFrame implements MainPanel {
     }
 
     public MainFrame(){
-        bannerImg = new ImageIcon("src/img/logo1.jpg").getImage();
-        menuBar = new JMenuBar(){
-            public void paint(Graphics g) {
-                super.paint(g);
-//                g.drawImage(bannerImg, 70, 0, getWidth() - 200, getHeight(), this);
-            }
-        };
-        menu = Utils.getMenu("File");
-        menu.add(Utils.getMenuItem("New"));
-        menu.add(Utils.getMenuItem("Save"));
-        menu.add(Utils.getMenuItem("Save_as"));
-        menu.add(new JSeparator());
-        menu.add(Utils.getMenuItem("Close"));
-        menu.add(new JSeparator());
-        menu.add(Utils.getMenuItem("Exit"));
-
-        //menuBar.setLayout(new BorderLayout());
-        menuBar.add(menu);
-
-        i18nSwitchBtn = new JButton(){
-            public String getText() {
-                String txt = Configuration.getLanguage();
-                if(Utils.isNull(txt))
-                    txt = Configuration.default_language;
-                return txt;
-            }
-        };
-        i18nSwitchBtn.setAction(new AbstractAction() {
-            public void actionPerformed(ActionEvent e) {
-                String lang = "" + Configuration.getLanguage();
-                int index = -1;
-                for(int j = 0; j < langList.length; j++)
-                    if(lang.equals(langList[j])){
-                        index = j;
-                        break;
-                    }
-                index++;
-                if(index >= langList.length)
-                    index = 0;
-                Configuration.setLanguage(langList[index]);
-                setCurrentState(getCurrentState());
-                repaint();
-            }
-        });
-        i18nSwitchBtn.setBackground(ColorScheme.dataBkgColor);
-        i18nSwitchBtn.setContentAreaFilled(false);
 
         bottomPanel = new JPanel();
-        bannerPanel = new JPanel(new BorderLayout());
-//        bannerPanel.add(bannerBtn, BorderLayout.CENTER);
-        bannerPanel.add(i18nSwitchBtn, BorderLayout.EAST);
+        
+        versionLabel = new JLabel(Configuration.getVersion());
+        
+        exitBtn = Utils.getButton("Exit");
+        exitBtn.setAction(new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
-        tabbedPane = new JTabbedPane(JTabbedPane.BOTTOM);
+        exitBtn.setContentAreaFilled(false);
+//        exitBtn.setBorderPainted(false);
+        exitBtn.setMinimumSize(new Dimension(50, 10));
+        exitBtn.setMaximumSize(new Dimension(50, 10));
+        exitBtn.setSize(new Dimension(50, 10));
+        exitBtn.setPreferredSize(new Dimension(50, 10));
+        exitBtn.addMouseListener(new MouseAdapter() {
+            public void mouseEntered(MouseEvent e) {
+                Utils.buttonEntered(exitBtn);
+            }
 
+            public void mouseExited(MouseEvent e) {
+                Utils.buttonExited(exitBtn);
+            }
+        });
+        
+        bottomPanel.setLayout(new GridBagLayout());
+        Utils.constrain(bottomPanel, versionLabel, 0, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 10, 0, 0);
+        Utils.constrain(bottomPanel, Box.createHorizontalBox(), 1, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 0, 0, 0);
+        Utils.constrain(bottomPanel, exitBtn, 4, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 0.1, 1, 0, 0, 10, 0);
+        bottomPanel.setBorder(new CompoundBorder(new EmptyBorder(10, 0, 10, 0), new LineBorder(Color.black){
+            public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+                Graphics2D g2D = (Graphics2D ) g;
+                g2D.setPaint(new GradientPaint(10, 1, Color.gray.brighter(), width /2, 1, Color.black));
+                g2D.drawLine(10, 1, width / 2, 1);
+                g2D.setPaint(new GradientPaint(width / 2, 1, Color.black, width - 10, 1, Color.gray.brighter()));
+                g2D.drawLine(width / 2, 1, width - 10, 1);
+            }
+        }));
+        
         mainPanel = new JPanel(new CardLayout());
 
         mainPanel.add(new Step1(), ""+States.Step1);
@@ -97,16 +82,15 @@ public class MainFrame extends JFrame implements MainPanel {
         mainPanel.add(new Step3(), ""+States.Step3);
 
         getContentPane().add(mainPanel, BorderLayout.CENTER);
-        menuBar.add(bannerPanel, BorderLayout.EAST);
+        getContentPane().add(bottomPanel, BorderLayout.SOUTH);
 
-        setJMenuBar(menuBar);
         setCurrentState("" + States.Step1);
     }
 
     public static void main(String [] args){
 
         MainFrame frame = new MainFrame();
-        frame.setSize(800,600);
+        frame.setSize(840,600);
         Utils.centerOnScreen(frame);
         frame.setTitle(i18n.getString("MainTitle"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

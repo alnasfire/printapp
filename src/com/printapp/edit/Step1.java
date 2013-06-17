@@ -1,10 +1,8 @@
 package com.printapp.edit;
 
 import com.printapp.dialog.MainPanel;
-import com.printapp.util.ColorScheme;
-import com.printapp.util.Configuration;
-import com.printapp.util.Utils;
-import com.printapp.util.i18n;
+import com.printapp.util.*;
+
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -37,7 +35,7 @@ public class Step1 extends JPanel{
 
     public void init(){
 
-        bannerImg = new ImageIcon("src/img/logo1.jpg").getImage();
+        bannerImg = ImageResource.getImageIcon("logo1.jpg").getImage();
 
         i18nSwitchBtn = new JButton(){
             public String getText() {
@@ -69,7 +67,7 @@ public class Step1 extends JPanel{
         i18nSwitchBtn.setPreferredSize(new Dimension(60, 20));
         
         setLayout(new GridBagLayout());
-        this.img = new ImageIcon("src/img/catalogue.jpg").getImage();
+        this.img = ImageResource.getImageIcon("catalogue.jpg").getImage();
         bannerPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);

@@ -2,6 +2,7 @@ package com.printapp.edit;
 
 import com.printapp.edit.misc.GridItem;
 import com.printapp.edit.misc.InfoLabel;
+import com.printapp.util.ImageResource;
 import com.printapp.util.Utils;
 import com.printapp.util.i18n;
 import javax.swing.*;
@@ -38,7 +39,7 @@ public class Step2 extends JPanel {
             }
         });
 
-        acceptButton.setIcon(new ImageIcon(new ImageIcon("src/img/steps.jpg").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
+        acceptButton.setIcon(new ImageIcon(ImageResource.getImageIcon("steps.jpg").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
 
         panelGrid = new JPanel();
         panelGrid.setLayout(new GridLayout(6, 4));

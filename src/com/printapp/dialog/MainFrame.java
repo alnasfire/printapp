@@ -4,6 +4,8 @@ import com.printapp.edit.Step1;
 import com.printapp.edit.Step2;
 import com.printapp.edit.Step3;
 import com.printapp.util.*;
+import de.muntjak.tinylookandfeel.TinyLookAndFeel;
+
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -33,12 +35,16 @@ public class MainFrame extends JFrame implements MainPanel {
     }
 
     public MainFrame(){
-
+        try {
+            UIManager.setLookAndFeel(new TinyLookAndFeel());
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
         bottomPanel = new JPanel();
         
         versionLabel = new JLabel(Configuration.getVersion());
         
-        exitBtn = Utils.getButton("Exit");
+        exitBtn = new JButton();
         exitBtn.setAction(new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
@@ -46,11 +52,7 @@ public class MainFrame extends JFrame implements MainPanel {
         });
 
         exitBtn.setContentAreaFilled(false);
-//        exitBtn.setBorderPainted(false);
-        exitBtn.setMinimumSize(new Dimension(50, 10));
-        exitBtn.setMaximumSize(new Dimension(50, 10));
-        exitBtn.setSize(new Dimension(50, 10));
-        exitBtn.setPreferredSize(new Dimension(50, 10));
+        exitBtn.setIcon(ImageResource.getImageIcon("Delete24.gif"));
         exitBtn.addMouseListener(new MouseAdapter() {
             public void mouseEntered(MouseEvent e) {
                 Utils.buttonEntered(exitBtn);

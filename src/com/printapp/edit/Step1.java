@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Step1 extends JPanel{
 
@@ -33,6 +34,14 @@ public class Step1 extends JPanel{
         init();
     }
 
+    private void setLanguageIcon(JButton jButton){
+        if (jButton.getText().equalsIgnoreCase("ru"))
+            jButton.setIcon(new ImageIcon(ImageResource.getImageIcon("ru.png").getImage().getScaledInstance(70, 40, Image.SCALE_DEFAULT)));
+        else
+            jButton.setIcon(new ImageIcon(ImageResource.getImageIcon("en.png").getImage().getScaledInstance(70, 40, Image.SCALE_DEFAULT)));
+        jButton.repaint();
+    }
+
     public void init(){
 
         bannerImg = ImageResource.getImageIcon("logo1.jpg").getImage();
@@ -45,6 +54,7 @@ public class Step1 extends JPanel{
                 return txt;
             }
         };
+
         i18nSwitchBtn.setAction(new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
                 String lang = "" + Configuration.getLanguage();
@@ -59,13 +69,14 @@ public class Step1 extends JPanel{
                     index = 0;
                 Configuration.setLanguage(langList[index]);
                 Utils.getMainPanel().setCurrentState(Utils.getMainPanel().getCurrentState());
+                setLanguageIcon(i18nSwitchBtn);
                 repaint();
             }
         });
         i18nSwitchBtn.setBackground(ColorScheme.dataBkgColor);
         i18nSwitchBtn.setContentAreaFilled(false);
-        i18nSwitchBtn.setPreferredSize(new Dimension(60, 20));
-        
+        i18nSwitchBtn.setIcon(new ImageIcon(ImageResource.getImageIcon("ru.png").getImage().getScaledInstance(70, 40, Image.SCALE_DEFAULT)));
+
         setLayout(new GridBagLayout());
         this.img = ImageResource.getImageIcon("catalogue.jpg").getImage();
         bannerPanel = new JPanel(){
@@ -115,11 +126,21 @@ public class Step1 extends JPanel{
         helloLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         
         newBtn = Utils.getButton("New");
+        newBtn.setIcon(ImageResource.getImageIcon("New32.png"));
+        newBtn.setContentAreaFilled(false);
+        newBtn.setHorizontalAlignment(AbstractButton.LEFT);
+
         openBtn = Utils.getButton("Open");
+        openBtn.setIcon(ImageResource.getImageIcon("Open32.png"));
+        openBtn.setContentAreaFilled(false);
+        openBtn.setHorizontalAlignment(AbstractButton.LEFT);
         binBtn = Utils.getButton("Bin");
+        binBtn.setIcon(new ImageIcon(ImageResource.getImageIcon("bin.png").getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT)));
+        binBtn.setContentAreaFilled(false);
+        binBtn.setHorizontalAlignment(AbstractButton.LEFT);
 
         JPanel tmpPanel2 = new JPanel();
-        tmpPanel2.setLayout(new BoxLayout(tmpPanel2, BoxLayout.Y_AXIS));
+        tmpPanel2.setLayout(new BoxLayout(tmpPanel2, BoxLayout.PAGE_AXIS));
         tmpPanel2.add(Box.createVerticalStrut(50));
         tmpPanel2.add(makeBtnPanel(helloLabel));
         tmpPanel2.add(Box.createVerticalStrut(50));
@@ -128,7 +149,7 @@ public class Step1 extends JPanel{
         tmpPanel2.add(makeBtnPanel(binBtn));
         tmpPanel2.add(Box.createVerticalStrut(50));
 
-        centerRightPanel.add(tmpPanel2, BorderLayout.CENTER);
+        centerRightPanel.add(tmpPanel2, BorderLayout.SOUTH);
         
         centerPanel = new JPanel(new GridBagLayout());
         
@@ -146,6 +167,7 @@ public class Step1 extends JPanel{
         panel.setLayout(new BorderLayout());
         panel.add(btn, BorderLayout.CENTER);
         panel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        panel.setMaximumSize(new Dimension(200, 60));
         return panel;
     }
     

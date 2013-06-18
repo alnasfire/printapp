@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63fd253d-fb9d-4109-9c38-6fa52e7ad6fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/leftLogo.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/leftLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/txt2c.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/txt2c.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" />
-    </list>
+    <list default="true" id="63fd253d-fb9d-4109-9c38-6fa52e7ad6fb" name="Default" comment="" />
     <ignored path="PrintApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,7 +66,7 @@
       <file leaf-file-name="Step1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="0.7718121">
+            <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="1.2510067">
               <folding />
             </state>
           </provider>
@@ -667,7 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="0.7718121">
+        <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="1.2510067">
           <folding />
         </state>
       </provider>

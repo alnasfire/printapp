@@ -134,6 +134,7 @@ public class Step1 extends JPanel{
                 Utils.forwardState(Utils.getMainPanel());
             }
         });
+
         openBtn = Utils.getButton("Open");
         openBtn.setIcon(ImageResource.getImageIcon("Open32.png"));
         openBtn.setContentAreaFilled(false);

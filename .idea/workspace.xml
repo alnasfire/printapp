@@ -69,7 +69,7 @@
       <file leaf-file-name="Step1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="84" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.44117647">
+            <state line="135" column="55" selection-start="5676" selection-end="5676" vertical-scroll-proportion="0.18439716">
               <folding>
                 <element signature="e#5513#5674#0" expanded="true" />
                 <element signature="e#5663#5664#0" expanded="true" />
@@ -99,7 +99,7 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-43.4">
+            <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-51.6">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1297#1432#0" expanded="true" />
@@ -867,17 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-43.4">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1297#1432#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="35" selection-start="779" selection-end="791" vertical-scroll-proportion="0.0">
@@ -897,9 +886,20 @@
         <state line="42" column="10" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-51.6">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1297#1432#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="84" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.44117647">
+        <state line="135" column="55" selection-start="5676" selection-end="5676" vertical-scroll-proportion="0.18439716">
           <folding>
             <element signature="e#5513#5674#0" expanded="true" />
             <element signature="e#5663#5664#0" expanded="true" />

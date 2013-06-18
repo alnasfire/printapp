@@ -1,8 +1,6 @@
 package com.printapp.edit;
 
-import com.printapp.dialog.MainPanel;
 import com.printapp.util.*;
-
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -30,7 +28,6 @@ public class Step1 extends JPanel{
     private Image bottomLeftImg;
 
     public Step1(){
-
         super();
         init();
     }

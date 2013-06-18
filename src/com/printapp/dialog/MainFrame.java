@@ -43,18 +43,15 @@ public class MainFrame extends JFrame implements MainPanel {
         
         versionLabel = new JLabel(Configuration.getVersion());
         
-        exitBtn = new JButton();
+        exitBtn = new AlphaButton();
         exitBtn.setAction(new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
             }
         });
 
-        exitBtn.setContentAreaFilled(false);
-        exitBtn.setBorderPainted(false);
         exitBtn.setIcon(ImageResource.getImageIcon("Delete24.gif"));
-        Utils.setupHyperlinkView(exitBtn);
-        
+
         bottomPanel.setLayout(new GridBagLayout());
         Utils.constrain(bottomPanel, versionLabel, 0, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 10, 0, 0);
         Utils.constrain(bottomPanel, Box.createHorizontalBox(), 1, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 0, 0, 0);

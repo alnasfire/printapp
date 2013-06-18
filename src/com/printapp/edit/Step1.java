@@ -127,7 +127,6 @@ public class Step1 extends JPanel{
         
         newBtn = Utils.getButton("New");
         newBtn.setIcon(ImageResource.getImageIcon("New32.png"));
-        newBtn.setContentAreaFilled(false);
         newBtn.setHorizontalAlignment(AbstractButton.LEFT);
         newBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -139,21 +138,11 @@ public class Step1 extends JPanel{
 
         openBtn = Utils.getButton("Open");
         openBtn.setIcon(ImageResource.getImageIcon("Open32.png"));
-        openBtn.setContentAreaFilled(false);
         openBtn.setHorizontalAlignment(AbstractButton.LEFT);
-        openBtn.setBorderPainted(false);
-        openBtn.setFocusPainted(false);
 
         binBtn = Utils.getButton("Bin");
         binBtn.setIcon(new ImageIcon(ImageResource.getImageIcon("bin.png").getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT)));
-        binBtn.setContentAreaFilled(false);
         binBtn.setHorizontalAlignment(AbstractButton.LEFT);
-        binBtn.setBorderPainted(false);
-        binBtn.setFocusPainted(false);
-
-        Utils.setupHyperlinkView(newBtn);
-        Utils.setupHyperlinkView(openBtn);
-        Utils.setupHyperlinkView(binBtn);
 
         JPanel tmpPanel2 = new JPanel();
         tmpPanel2.setLayout(new BoxLayout(tmpPanel2, BoxLayout.Y_AXIS));
@@ -183,8 +172,8 @@ public class Step1 extends JPanel{
         panel.setLayout(new BorderLayout());
         panel.add(btn, BorderLayout.CENTER);
         panel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
-        panel.setMaximumSize(new Dimension(180, 50));
-        panel.setSize(new Dimension(180, 50));
+        panel.setMaximumSize(new Dimension(180, 52));
+        panel.setSize(new Dimension(180, 52));
         return panel;
     }
 }

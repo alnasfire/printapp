@@ -1,5 +1,6 @@
 package com.printapp.util;
 
+import com.printapp.dialog.AlphaButton;
 import com.printapp.dialog.MainPanel;
 import javax.swing.*;
 import java.awt.*;
@@ -77,11 +78,16 @@ public class Utils {
     }
 
     public static JButton getButton(final String key){
-        return new JButton(){
-            public String getText() {
-                return i18n.getString(key);
-            }
-        };
+//        JButton btn = new JButton(){
+//
+//            public String getText() {
+//                return i18n.getString(key);
+//            }
+//
+//
+//        };
+//        return btn;
+        return new AlphaButton(key);
     }
 
     public static JLabel getLabel(final String key){
@@ -98,17 +104,5 @@ public class Utils {
 
     public static void componentExited(JComponent btn){
         btn.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
-    
-    public static void setupHyperlinkView(final JComponent btn){
-        btn.addMouseListener(new MouseAdapter() {
-            public void mouseEntered(MouseEvent e) {
-                Utils.componentEntered(btn);
-            }
-
-            public void mouseExited(MouseEvent e) {
-                Utils.componentExited(btn);
-            }
-        });
     }
 }

@@ -3,6 +3,8 @@ package com.printapp.util;
 import com.printapp.dialog.MainPanel;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Utils {
 
@@ -90,11 +92,23 @@ public class Utils {
         };
     }
     
-    public static void buttonEntered(JButton btn){
+    public static void componentEntered(JComponent btn){
         btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }
 
-    public static void buttonExited(JButton btn){
+    public static void componentExited(JComponent btn){
         btn.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+    }
+    
+    public static void setupHyperlinkView(final JComponent btn){
+        btn.addMouseListener(new MouseAdapter() {
+            public void mouseEntered(MouseEvent e) {
+                Utils.componentEntered(btn);
+            }
+
+            public void mouseExited(MouseEvent e) {
+                Utils.componentExited(btn);
+            }
+        });
     }
 }

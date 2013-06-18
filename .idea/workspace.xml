@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63fd253d-fb9d-4109-9c38-6fa52e7ad6fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/logo1.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/logo1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrintApp.iml" afterPath="$PROJECT_DIR$/PrintApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/leftLogo.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/leftLogo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/txt2c.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/txt2c.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/Utils.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/Utils.java" />
     </list>
     <ignored path="PrintApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +71,7 @@
       <file leaf-file-name="Step1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="0" selection-start="8096" selection-end="8096" vertical-scroll-proportion="0.7946309">
+            <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="0.7718121">
               <folding />
             </state>
           </provider>
@@ -100,7 +98,7 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="25" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
+            <state line="67" column="73" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/com/printapp/conf/lang.properties" />
         <option value="$PROJECT_DIR$/src/com/printapp/util/ImageResource.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/edit/Step2.java" />
-        <option value="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/util/Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" />
       </list>
     </option>
@@ -648,15 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="25" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="10" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" />
@@ -667,9 +656,18 @@
         <state line="36" column="34" selection-start="844" selection-end="856" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="73" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="0" selection-start="8096" selection-end="8096" vertical-scroll-proportion="0.7946309">
+        <state line="189" column="42" selection-start="8073" selection-end="8073" vertical-scroll-proportion="0.7718121">
           <folding />
         </state>
       </provider>

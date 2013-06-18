@@ -45,7 +45,7 @@ public class Step1 extends JPanel{
 
     public void init(){
 
-        bannerImg = ImageResource.getImageIcon("logo1.jpg").getImage();
+        bannerImg = ImageResource.getImageIcon("logo1.png").getImage();
 
         i18nSwitchBtn = new JButton(){
             public String getText() {
@@ -84,11 +84,11 @@ public class Step1 extends JPanel{
         bannerPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(bannerImg, 0, 1, getWidth() - 2, getHeight() - 2, this);
+                g.drawImage(bannerImg, 0, 0, getWidth(), 71, this);
             }
         };
 
-        bannerPanel.setPreferredSize(new Dimension(50, 44));
+        bannerPanel.setPreferredSize(new Dimension(50, 73));
 
         JPanel tmpPanel = new JPanel(new GridBagLayout());
         Utils.constrain(tmpPanel, bannerPanel, 0, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 1, 1, 1, 1);
@@ -107,8 +107,8 @@ public class Step1 extends JPanel{
         centerLeftPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(topLeftImg, 2, 2, getWidth()-4, getHeight() / 2 - 8, this);
-                g.drawImage(bottomLeftImg, 2, getHeight() / 2 + 4, getWidth() - 4, getHeight() / 2 - 16, this);
+                g.drawImage(topLeftImg, (getWidth() - 292) / 2, 2 + 10, 292, 250, this);
+                g.drawImage(bottomLeftImg, (getWidth() - 308) / 2, getHeight() / 2 + 4 + 10, 308, 153, this);
             }
         };
 
@@ -186,8 +186,8 @@ public class Step1 extends JPanel{
         panel.setLayout(new BorderLayout());
         panel.add(btn, BorderLayout.CENTER);
         panel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
-        panel.setMaximumSize(new Dimension(180, 60));
-        panel.setSize(new Dimension(180, 60));
+        panel.setMaximumSize(new Dimension(180, 50));
+        panel.setSize(new Dimension(180, 50));
         return panel;
     }
 }

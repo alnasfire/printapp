@@ -51,6 +51,7 @@ public class MainFrame extends JFrame implements MainPanel {
         });
 
         exitBtn.setContentAreaFilled(false);
+        exitBtn.setBorderPainted(false);
         exitBtn.setIcon(ImageResource.getImageIcon("Delete24.gif"));
         Utils.setupHyperlinkView(exitBtn);
         

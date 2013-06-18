@@ -4,7 +4,6 @@ import com.printapp.edit.Step1;
 import com.printapp.edit.Step2;
 import com.printapp.edit.Step3;
 import com.printapp.util.*;
-import de.muntjak.tinylookandfeel.TinyLookAndFeel;
 
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
@@ -35,11 +34,11 @@ public class MainFrame extends JFrame implements MainPanel {
     }
 
     public MainFrame(){
-        try {
-            UIManager.setLookAndFeel(new TinyLookAndFeel());
-        } catch (UnsupportedLookAndFeelException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            UIManager.setLookAndFeel(new TinyLookAndFeel());
+//        } catch (UnsupportedLookAndFeelException e) {
+//            e.printStackTrace();
+//        }
         bottomPanel = new JPanel();
         
         versionLabel = new JLabel(Configuration.getVersion());
@@ -53,15 +52,7 @@ public class MainFrame extends JFrame implements MainPanel {
 
         exitBtn.setContentAreaFilled(false);
         exitBtn.setIcon(ImageResource.getImageIcon("Delete24.gif"));
-        exitBtn.addMouseListener(new MouseAdapter() {
-            public void mouseEntered(MouseEvent e) {
-                Utils.buttonEntered(exitBtn);
-            }
-
-            public void mouseExited(MouseEvent e) {
-                Utils.buttonExited(exitBtn);
-            }
-        });
+        Utils.setupHyperlinkView(exitBtn);
         
         bottomPanel.setLayout(new GridBagLayout());
         Utils.constrain(bottomPanel, versionLabel, 0, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 10, 0, 0);

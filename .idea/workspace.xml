@@ -2,8 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63fd253d-fb9d-4109-9c38-6fa52e7ad6fb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/printapp/img/leftLogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/printapp/img/txt2c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/._.DS_Store" afterPath="$PROJECT_DIR$/._.DS_Store" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/._.DS_Store" afterPath="$PROJECT_DIR$/src/._.DS_Store" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/bascket.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/bascket.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/bin.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/bin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/catalogue.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/catalogue.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/en.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/en.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/logo1.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/logo1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/may.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/may.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/ru.png" afterPath="$PROJECT_DIR$/src/com/printapp/img/ru.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/img/steps.jpg" afterPath="$PROJECT_DIR$/src/com/printapp/img/steps.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrintApp.iml" afterPath="$PROJECT_DIR$/PrintApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/conf/lang.properties" afterPath="$PROJECT_DIR$/src/com/printapp/conf/lang.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/dialog/MainDlg.java" afterPath="$PROJECT_DIR$/src/com/printapp/dialog/MainDlg.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/dialog/MainPanel.java" afterPath="$PROJECT_DIR$/src/com/printapp/dialog/MainPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/Step2.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/Step2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/Step3.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/Step3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/misc/GridItem.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/misc/GridItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/edit/misc/InfoLabel.java" afterPath="$PROJECT_DIR$/src/com/printapp/edit/misc/InfoLabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/model/Project.java" afterPath="$PROJECT_DIR$/src/com/printapp/model/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/ColorScheme.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/ColorScheme.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/Configuration.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/Configuration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/ImageResource.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/ImageResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/States.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/States.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/Utils.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/printapp/util/i18n.java" afterPath="$PROJECT_DIR$/src/com/printapp/util/i18n.java" />
     </list>
     <ignored path="PrintApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,11 +110,8 @@
       <file leaf-file-name="Step1.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="55" selection-start="5676" selection-end="5676" vertical-scroll-proportion="0.18439716">
-              <folding>
-                <element signature="e#5513#5674#0" expanded="true" />
-                <element signature="e#5663#5664#0" expanded="true" />
-              </folding>
+            <state line="35" column="45" selection-start="940" selection-end="940" vertical-scroll-proportion="0.59490085">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,12 +137,8 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-51.6">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1297#1432#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
-              </folding>
+            <state line="54" column="25" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,7 +146,7 @@
       <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/printapp/util/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="779" selection-end="791" vertical-scroll-proportion="0.0">
+            <state line="103" column="8" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,12 +174,12 @@
         <option value="$PROJECT_DIR$/src/com/printapp/util/ColorScheme.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/util/Configuration.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/util/i18n.java" />
-        <option value="$PROJECT_DIR$/src/com/printapp/util/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/edit/Step3.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/conf/lang.properties" />
         <option value="$PROJECT_DIR$/src/com/printapp/util/ImageResource.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/edit/Step2.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/printapp/util/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/printapp/edit/Step1.java" />
       </list>
     </option>
@@ -192,20 +226,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -269,10 +289,6 @@
               <option name="myItemId" value="printapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -321,28 +337,6 @@
               <option name="myItemId" value="printapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="edit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -365,95 +359,19 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrintApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="printapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinylaf.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -461,7 +379,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="true" />
@@ -470,7 +388,7 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -676,27 +594,27 @@
     <frame x="64" y="-4" width="1217" height="1029" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15681234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33599088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990575" sideWeight="0.7403189" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39949748" sideWeight="0.6712329" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18680377" sideWeight="0.8473804" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15261959" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21336761" sideWeight="0.8485194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15148064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -794,13 +712,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainDlg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/misc/GridItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="11" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" />
@@ -808,16 +719,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/misc/InfoLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="13" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/i18n.java">
@@ -827,49 +734,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/States.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.7.0_03/src.zip!/java/awt/CardLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="523" column="16" selection-start="17687" selection-end="17687" vertical-scroll-proportion="0.3321033">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/ImageResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="49" selection-end="49" vertical-scroll-proportion="0.043041606">
-          <folding />
-        </state>
+        <state line="2" column="21" selection-start="49" selection-end="49" vertical-scroll-proportion="0.043041606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/util/ColorScheme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="13" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/model/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/printapp/util/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="779" selection-end="791" vertical-scroll-proportion="0.0">
+        <state line="54" column="25" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -888,22 +778,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/dialog/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="29" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-51.6">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1297#1432#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
+        <state line="54" column="25" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/printapp/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="8" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/printapp/edit/Step1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="55" selection-start="5676" selection-end="5676" vertical-scroll-proportion="0.18439716">
-          <folding>
-            <element signature="e#5513#5674#0" expanded="true" />
-            <element signature="e#5663#5664#0" expanded="true" />
-          </folding>
+        <state line="35" column="45" selection-start="940" selection-end="940" vertical-scroll-proportion="0.59490085">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +826,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>grails-2.0.4</last-edited>
+          <last-edited>commons-fileupload-1.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -965,7 +855,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

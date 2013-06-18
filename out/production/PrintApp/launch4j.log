@@ -1,0 +1,22 @@
+
+
+CmdLine:	D:\GitHub\printapp\out\production\PrintApp\app.exe --l4j-debug
+WOW64:		no
+Check launcher:	 (n/a)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.4.2_06
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6.0_26
+Match:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6.0_43
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.5
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.5.0_18
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.6
+Ignore:		SOFTWARE\JavaSoft\Java Development Kit\1.6.0_43
+Check launcher:	C:\Program Files\Java\jre6\bin\javaw.exe (OK)
+Launcher:	C:\Program Files\Java\jre6\bin\javaw.exe
+Launcher args:	-jar "D:\GitHub\printapp\out\production\PrintApp\app.exe"
+Args length:	57/32768 chars
+Exit code:	0

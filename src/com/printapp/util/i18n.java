@@ -16,7 +16,7 @@ public class i18n {
         if(props == null)
         try{
             props = new Properties();
-            FileInputStream is = new FileInputStream("src/com/printapp/conf/lang.properties");
+            FileInputStream is = new FileInputStream("com/printapp/conf/lang.properties");
             InputStreamReader isr = new InputStreamReader(is, "UTF8");
             props.load(isr);
         }catch(Exception ex){

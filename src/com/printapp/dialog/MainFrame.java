@@ -60,10 +60,10 @@ public class MainFrame extends JFrame implements MainPanel {
         bottomPanel.setBorder(new CompoundBorder(new EmptyBorder(10, 0, 10, 0), new LineBorder(Color.black){
             public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
                 Graphics2D g2D = (Graphics2D ) g;
-                g2D.setPaint(new GradientPaint(10, 0, Color.gray.brighter(), width /2, 0, Color.black));
-                g2D.drawLine(10, 0, width / 2, 0);
-                g2D.setPaint(new GradientPaint(width / 2, 0, Color.black, width - 10, 0, Color.gray.brighter()));
-                g2D.drawLine(width / 2, 0, width - 10, 0);
+                g2D.setPaint(new GradientPaint(1, 0, Color.gray.brighter(), width /2, 0, Color.black));
+                g2D.drawLine(1, 0, width / 2, 0);
+                g2D.setPaint(new GradientPaint(width / 2, 0, Color.black, width - 2, 0, Color.gray.brighter()));
+                g2D.drawLine(width / 2, 0, width - 2, 0);
             }
         }));
         

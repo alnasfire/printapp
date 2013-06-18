@@ -37,6 +37,7 @@ public class Step2 extends JPanel {
                 Utils.forwardState(Utils.getMainPanel());
             }
         });
+        acceptButton.setText("Continue");
 
         acceptButton.setIcon(new ImageIcon(ImageResource.getImageIcon("steps.jpg").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
 

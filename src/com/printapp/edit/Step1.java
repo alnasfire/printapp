@@ -91,7 +91,7 @@ public class Step1 extends JPanel{
         Utils.constrain(tmpPanel, bannerPanel, 0, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 1, 1, 1, 1);
 //        Utils.constrain(tmpPanel, i18nSwitchBtn, 3, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 0.3, 1, 1, 1, 1, 1);
 
-        tmpPanel.setBorder(new CompoundBorder(new EmptyBorder(1, 0, 1, 0), new LineBorder(Color.black) {
+        tmpPanel.setBorder(new CompoundBorder(new EmptyBorder(0, 0, 0, 0), new LineBorder(Color.black) {
             public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
                 Graphics2D g2D = (Graphics2D) g;
                 g2D.setPaint(new GradientPaint(0, height - 1, Color.gray, width / 2, height - 1, Color.gray.brighter().brighter().brighter()));
@@ -104,6 +104,15 @@ public class Step1 extends JPanel{
         centerLeftPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
+
+                Graphics2D g2D = (Graphics2D ) g;
+                int width = getWidth();
+                int height = getHeight();
+                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
+                g2D.fillRect(0, 0, width - 1, height / 2);
+                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
+                g2D.fillRect(0, height / 2, width - 1, height);
+
                 g.drawImage(topLeftImg, (getWidth() - 292) / 2, 2 + 10, 292, 250, this);
                 g.drawImage(bottomLeftImg, (getWidth() - 308) / 2, getHeight() / 2 + 4 + 10, 308, 153, this);
             }
@@ -119,12 +128,24 @@ public class Step1 extends JPanel{
             }
         }));
         
-        centerRightPanel = new JPanel(new BorderLayout());
+        centerRightPanel = new JPanel(new BorderLayout()){
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+
+                Graphics2D g2D = (Graphics2D ) g;
+                int width = getWidth();
+                int height = getHeight();
+                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
+                g2D.fillRect(0, 0, width - 1, height / 2);
+                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
+                g2D.fillRect(0, height / 2, width - 1, height);
+            }
+        };
         centerRightPanel.add(tmpPanel, BorderLayout.NORTH);
         
         helloLabel = Utils.getLabel("helloLabel");
         helloLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
-        
+
         newBtn = Utils.getButton("New");
         newBtn.setIcon(ImageResource.getImageIcon("New32.png"));
         newBtn.setHorizontalAlignment(AbstractButton.LEFT);
@@ -144,20 +165,24 @@ public class Step1 extends JPanel{
         binBtn.setIcon(new ImageIcon(ImageResource.getImageIcon("bin.png").getImage().getScaledInstance(32, 32, Image.SCALE_DEFAULT)));
         binBtn.setHorizontalAlignment(AbstractButton.LEFT);
 
-        JPanel tmpPanel2 = new JPanel();
+        JPanel tmpPanel2 = new JPanel(){
+            protected void paintComponent(Graphics g) {
+//                super.paintComponent(g);
+            }
+        };
         tmpPanel2.setLayout(new BoxLayout(tmpPanel2, BoxLayout.Y_AXIS));
         tmpPanel2.add(Box.createVerticalStrut(50));
-        tmpPanel2.add(makeBtnPanel(helloLabel));
-        tmpPanel2.add(Box.createVerticalStrut(50));
-        tmpPanel2.add(makeBtnPanel(newBtn));
-        tmpPanel2.add(makeBtnPanel(openBtn));
-        tmpPanel2.add(makeBtnPanel(binBtn));
-        tmpPanel2.add(Box.createVerticalStrut(50));
-
+        tmpPanel2.add(makeBtnPanel(helloLabel, new Dimension(120, 80)));
+        tmpPanel2.add(Box.createVerticalStrut(70));
+        tmpPanel2.add(makeBtnPanel(newBtn, null));
+        tmpPanel2.add(makeBtnPanel(openBtn, null));
+        tmpPanel2.add(makeBtnPanel(binBtn, null));
+        tmpPanel2.add(Box.createRigidArea(new Dimension(10, 30)));
+        
         centerRightPanel.add(tmpPanel2, BorderLayout.SOUTH);
         
         centerPanel = new JPanel(new GridLayout());
-        
+       
         centerPanel.add(centerLeftPanel);
         centerPanel.add(centerRightPanel);
 
@@ -167,13 +192,21 @@ public class Step1 extends JPanel{
         
     }
 
-    private JPanel makeBtnPanel(JComponent btn){
-        JPanel panel = new JPanel();
+    private JPanel makeBtnPanel(JComponent btn, Dimension customSize){
+        JPanel panel = new JPanel(){
+            protected void paintComponent(Graphics g) {
+//                super.paintComponent(g);
+//                g.setColor(Color.red);
+//                g.fillRect(0 ,0 , getWidth(), getHeight());
+            }
+        };
         panel.setLayout(new BorderLayout());
         panel.add(btn, BorderLayout.CENTER);
-        panel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
-        panel.setMaximumSize(new Dimension(180, 52));
-        panel.setSize(new Dimension(180, 52));
+        panel.setBorder(BorderFactory.createEmptyBorder(00, 20, 10, 0));
+        if(customSize == null){
+            panel.setMaximumSize(new Dimension(180, 52));
+            panel.setSize(new Dimension(180, 52));
+        }
         return panel;
     }
 }

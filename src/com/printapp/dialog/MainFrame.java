@@ -41,7 +41,8 @@ public class MainFrame extends JFrame implements MainPanel {
 //        }
         bottomPanel = new JPanel();
         
-        versionLabel = new JLabel(Configuration.getVersion());
+        versionLabel = Utils.getLabel("Version");
+        versionLabel.setBorder(new EmptyBorder(0, 25, 0 ,0));
         
         exitBtn = new AlphaButton();
         exitBtn.setAction(new AbstractAction() {
@@ -59,21 +60,28 @@ public class MainFrame extends JFrame implements MainPanel {
         bottomPanel.setBorder(new CompoundBorder(new EmptyBorder(10, 0, 10, 0), new LineBorder(Color.black){
             public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
                 Graphics2D g2D = (Graphics2D ) g;
-                g2D.setPaint(new GradientPaint(10, 1, Color.gray.brighter(), width /2, 1, Color.black));
-                g2D.drawLine(10, 1, width / 2, 1);
-                g2D.setPaint(new GradientPaint(width / 2, 1, Color.black, width - 10, 1, Color.gray.brighter()));
-                g2D.drawLine(width / 2, 1, width - 10, 1);
+                g2D.setPaint(new GradientPaint(10, 0, Color.gray.brighter(), width /2, 0, Color.black));
+                g2D.drawLine(10, 0, width / 2, 0);
+                g2D.setPaint(new GradientPaint(width / 2, 0, Color.black, width - 10, 0, Color.gray.brighter()));
+                g2D.drawLine(width / 2, 0, width - 10, 0);
             }
         }));
         
-        mainPanel = new JPanel(new CardLayout());
+        mainPanel = new JPanel(new CardLayout()){
+            protected void paintComponent(Graphics g) {
+//                super.paintComponent(g);
+            }
+        };
 
         mainPanel.add(new Step1(), ""+States.Step1);
-        mainPanel.add(new Step2(), ""+States.Step2);
-        mainPanel.add(new Step3(), ""+States.Step3);
+        mainPanel.add(new Step2(), "" + States.Step2);
+        mainPanel.add(new Step3(), "" + States.Step3);
 
-        getContentPane().add(mainPanel, BorderLayout.CENTER);
-        getContentPane().add(bottomPanel, BorderLayout.SOUTH);
+
+        Container cp = getContentPane();
+        cp.add(mainPanel, BorderLayout.CENTER);
+        bottomPanel.setPreferredSize(new Dimension(840, 50));
+        cp.add(bottomPanel, BorderLayout.SOUTH);
 
         setCurrentState("" + States.Step1);
     }
@@ -86,5 +94,6 @@ public class MainFrame extends JFrame implements MainPanel {
         frame.setTitle(i18n.getString("MainTitle"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
+        frame.setResizable(false);
     }
 }

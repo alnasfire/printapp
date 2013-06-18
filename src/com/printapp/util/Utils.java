@@ -78,15 +78,6 @@ public class Utils {
     }
 
     public static JButton getButton(final String key){
-//        JButton btn = new JButton(){
-//
-//            public String getText() {
-//                return i18n.getString(key);
-//            }
-//
-//
-//        };
-//        return btn;
         return new AlphaButton(key);
     }
 

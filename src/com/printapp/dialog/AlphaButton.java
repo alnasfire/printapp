@@ -4,6 +4,7 @@ import com.printapp.util.Utils;
 import com.printapp.util.i18n;
 
 import javax.swing.*;
+import javax.swing.text.AttributeSet;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -15,7 +16,7 @@ public class AlphaButton extends JButton{
     private float alpha = 1f;
     private boolean hover = false;
     
-    Font normalFont = null;
+    Map fa = null;
     
     public AlphaButton(){
         super();
@@ -52,7 +53,9 @@ public class AlphaButton extends JButton{
         setContentAreaFilled(false);
         setBorderPainted(false);
         setFocusPainted(false);
-        normalFont = getFont();
+        Font ff = getFont();
+        if(ff != null)
+            fa = ff.getAttributes();
     }
     
     public String getText(){
@@ -76,19 +79,17 @@ public class AlphaButton extends JButton{
 
     public void paintComponent(java.awt.Graphics g) {
         java.awt.Graphics2D g2 = (java.awt.Graphics2D) g;
-        g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
         if(isHover()){
             setForeground(Color.blue);
             Font ff = g2.getFont();
             Map attributes = ff.getAttributes();
-            attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
-            setFont(ff.deriveFont(attributes));
+//            attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+//            setFont(ff.deriveFont(attributes));
         }else{
             setForeground(Color.black);
             Font ff = g2.getFont();
             Map attributes = ff.getAttributes();
-            attributes.remove(TextAttribute.UNDERLINE);
-            setFont(normalFont);
+            attributes.put(TextAttribute.UNDERLINE, -1);
         }
         super.paintComponent(g2);
     }    

@@ -1,7 +1,5 @@
 package com.printapp.util;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
@@ -16,7 +14,7 @@ public class i18n {
         if(props == null)
         try{
             props = new Properties();
-            FileInputStream is = new FileInputStream("com/printapp/conf/lang.properties");
+            InputStream is = i18n.class.getResourceAsStream("/com/printapp/conf/lang.properties");
             InputStreamReader isr = new InputStreamReader(is, "UTF8");
             props.load(isr);
         }catch(Exception ex){

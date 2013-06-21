@@ -18,27 +18,6 @@ public class ImageResource {
 
             return new MyImageIcon(imgURL);
         } catch (Exception e) {
-            try {
-                URL imgURL = URL.class.getResource("/com/printapp/img/" +
-                        imageName);
-
-                return new MyImageIcon(imgURL);
-            } catch (Exception ee) {
-                try {
-                    URL imgURL = ImageResource.class.getResource("/com/printapp/img/" +
-                            imageName);
-
-                    return new MyImageIcon(imgURL);
-                } catch (Exception eee) {
-                    try {
-                        URL imgURL = ImageResource.class.getResource("/com/printapp/img/" +
-                                imageName);
-
-                        return new MyImageIcon(imgURL);
-                    } catch (Exception e2) {
-                    }
-                }
-            }
         }
         return null; // crazy compiler requires it, on't remove
     }

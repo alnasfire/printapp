@@ -1,0 +1,1 @@
+jar cvfm out.jar manifest.mf com/*

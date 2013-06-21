@@ -81,14 +81,14 @@ public class Step1 extends JPanel{
         bannerPanel = new JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(bannerImg, 0, 0, getWidth(), 71, this);
+                g.drawImage(bannerImg, 0, 0, getWidth(), 97, this);
             }
         };
 
-        bannerPanel.setPreferredSize(new Dimension(50, 73));
+        bannerPanel.setPreferredSize(new Dimension(50, 97));
 
         JPanel tmpPanel = new JPanel(new GridBagLayout());
-        Utils.constrain(tmpPanel, bannerPanel, 0, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 1, 1, 1, 1);
+        Utils.constrain(tmpPanel, bannerPanel, 0, 0, 3, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 1, 1, 0, 0, 0, 0);
 //        Utils.constrain(tmpPanel, i18nSwitchBtn, 3, 0, 1, 1, GridBagConstraints.BOTH, GridBagConstraints.NORTHWEST, 0.3, 1, 1, 1, 1, 1);
 
         tmpPanel.setBorder(new CompoundBorder(new EmptyBorder(0, 0, 0, 0), new LineBorder(Color.black) {
@@ -108,25 +108,25 @@ public class Step1 extends JPanel{
                 Graphics2D g2D = (Graphics2D ) g;
                 int width = getWidth();
                 int height = getHeight();
-                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
-                g2D.fillRect(0, 0, width - 1, height / 2);
-                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
-                g2D.fillRect(0, height / 2, width - 1, height);
+                g2D.setPaint(new GradientPaint(width - 0, 0, Color.gray, width - 0, height / 2, Color.gray.brighter().brighter().brighter()));
+                g2D.fillRect(0, 0, width - 0, height / 2);
+                g2D.setPaint(new GradientPaint(width - 0, height / 2, Color.gray.brighter().brighter().brighter(), width - 0, height, Color.gray));
+                g2D.fillRect(0, height / 2, width - 0, height);
 
                 g.drawImage(topLeftImg, (getWidth() - 292) / 2, 2 + 10, 292, 250, this);
                 g.drawImage(bottomLeftImg, (getWidth() - 308) / 2, getHeight() / 2 + 4 + 10, 308, 153, this);
             }
         };
 
-        centerLeftPanel.setBorder(new CompoundBorder(new EmptyBorder(1, 1, 1, 1), new LineBorder(Color.black){
-            public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
-                Graphics2D g2D = (Graphics2D ) g;
-                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
-                g2D.drawLine(width - 1, 0, width - 1, height / 2);
-                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
-                g2D.drawLine(width - 1, height / 2, width - 1, height);
-            }
-        }));
+//        centerLeftPanel.setBorder(new CompoundBorder(new EmptyBorder(1, 1, 1, 1), new LineBorder(Color.black){
+//            public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+//                Graphics2D g2D = (Graphics2D ) g;
+//                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
+//                g2D.drawLine(width - 1, 0, width - 1, height / 2);
+//                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
+//                g2D.drawLine(width - 1, height / 2, width - 1, height);
+//            }
+//        }));
         
         centerRightPanel = new JPanel(new BorderLayout()){
             protected void paintComponent(Graphics g) {
@@ -135,10 +135,10 @@ public class Step1 extends JPanel{
                 Graphics2D g2D = (Graphics2D ) g;
                 int width = getWidth();
                 int height = getHeight();
-                g2D.setPaint(new GradientPaint(width - 1, 0, Color.gray, width - 1, height / 2, Color.gray.brighter().brighter().brighter()));
-                g2D.fillRect(0, 0, width - 1, height / 2);
-                g2D.setPaint(new GradientPaint(width - 1, height / 2, Color.gray.brighter().brighter().brighter(), width - 1, height, Color.gray));
-                g2D.fillRect(0, height / 2, width - 1, height);
+                g2D.setPaint(new GradientPaint(width - 0, 0, Color.gray, width - 0, height / 2, Color.gray.brighter().brighter().brighter()));
+                g2D.fillRect(0, 0, width - 0, height / 2);
+                g2D.setPaint(new GradientPaint(width - 0, height / 2, Color.gray.brighter().brighter().brighter(), width - 0, height, Color.gray));
+                g2D.fillRect(0, height / 2, width - 0, height);
             }
         };
         centerRightPanel.add(tmpPanel, BorderLayout.NORTH);
